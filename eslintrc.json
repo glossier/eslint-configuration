@@ -15,22 +15,19 @@
       2,
       {
         "required": {
-          "every": [
-            "id"
-          ]
+          "every": ["id"]
         }
       }
     ],
     "jsx-a11y/no-autofocus": 0,
-    "react/no-array-index-key": "error"
+    "react/no-array-index-key": "error",
+    "no-nested-ternary": "warn"
   },
   "env": {
     "mocha": true,
     "jest": true
   },
-  "plugins": [
-    "jsx-a11y"
-  ],
+  "plugins": ["jsx-a11y"],
   "settings": {
     "react": {
       "version": "detect"

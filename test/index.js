@@ -76,3 +76,14 @@ const template = foo.map((num, index) => { return <div key={index}>{num}</div> }
   t.is(result.errorCount, 1)
   t.is(result.messages[0].ruleId, 'react/no-array-index-key')
 })
+
+test('no nested ternary', t => {
+  const result = lint(
+    `const [foo, bar, baz, qux, quxx, foobar] = [false, true, false, true, false, false]
+const result = foo ? bar : baz === qux ? quxx : foobar`
+  )
+
+  console.log(result.messages)
+  t.is(result.warningCount, 1)
+  t.is(result.messages[0].ruleId, 'no-nested-ternary')
+})
