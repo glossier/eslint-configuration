@@ -11,7 +11,7 @@ To get started, extend Glossier's configuration in your `.eslintrc`.
 
 ```
 {
-  "extends": "@glossier"
+  "extends": "@glossier/frontend"
 }
 ```
 
