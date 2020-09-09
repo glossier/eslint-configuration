@@ -3,7 +3,7 @@ We are following [JavaScript Standard Style](https://standardjs.com), with [some
 
 ## Installation
 ```
-yarn add --dev eslint@^4.19.1 @glossier/eslint-config
+yarn add --dev eslint@^4.19.1 @glossier/eslint-config-frontend
 ```
 
 ## Usage
@@ -11,7 +11,7 @@ To get started, extend Glossier's configuration in your `.eslintrc`.
 
 ```
 {
-  "extends": "@glossier"
+  "extends": "@glossier/frontend"
 }
 ```
 
